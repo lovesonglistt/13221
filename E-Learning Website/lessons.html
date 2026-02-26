@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lessons | CodeBloom Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div id="logo">CodeBloom <span>Academy</span></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Learning Modules</h1>
+    <p class="tagline">Click each lesson to expand and see the full content.</p>
+</section>
+
+<div class="container">
+
+    
+    <div class="card">
+        <details>
+            <summary>Hyperlinks</summary>
+            <div class="lesson-content">
+			<img src="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_are_hyperlinks/link-1.png">
+			<h3>What are Hyperlinks</h3>
+                <p>Hyperlinks, often simply called links, are one of the essential building blocks of the World Wide Web. 
+				They were designed to connect a specific string of text to a unique web address, or URL, allowing users to navigate to a destination document 
+				instantly. This innovation replaced the need to manually type out long web addresses every time someone wanted to view a different page.</p>
+
+			<h3>The Role of Links in Web History</h3>
+			<p>When the Web was created in 1989, it was built on three main pillars: URLs for addresses, HTTP for transferring data, and HTML for formatting 
+			documents and embedding these essential links. While the internet has grown to include various types of media like video and images, the foundational
+			purpose of using links to browse and connect documents remains the same.</p>
+
+			<h3>Varieties of Hyperlinks</h3>
+			<p>There are several different ways links function depending on where they point:
+				<ul>
+				<li>Internal Links: These connect different pages within a single website. They are vital for making a site navigable; without them, 
+				a multi-page website cannot truly exist.</li>
+				<li>External Links: These direct users from your page to a page on a completely different website. These links create the "network" 
+				effect that forms the Web.</li>
+				<li>Incoming Links: These occur when another website creates a link that leads to your own.</li>
+				<li>.Anchors: Unlike standard links that load new pages, anchors link to different sections within the same document, allowing the browser to
+				"jump" to a specific part of the page.</li>
+				</ul>
+			</p>
+			<h3>Importance for Users and Search Engines</h3>
+			<p>Links are critical for both human visitors and search engine technology.
+				<ul>
+				<li>For Users: Links typically appear as blue, underlined text, making them easy to identify and click.</li>
+				<li>For Search Engines: Search engines "crawl" the internet by following links to discover and categorize new pages.</li>
+				<li>For SEO: Search Engine Optimization (SEO) involves using links effectively to improve a site's visibility. The text used for a link 
+				helps search engines understand what the target page is about, and having many incoming links from other sites can help a webpage rank higher 
+				in search results</li>
+			</p>
+			
+			<div class="card">
+        <details>
+            <summary>🔗 Activity</summary>
+            <div class="lesson-content">
+			<h3>Learning Activity:</h3>
+			<h3>Objective:</h3> 
+			<p>Demonstrate your understanding of web connectivity by creating a functional multi-link system using only HTML.</p><br>
+
+			<h3>The Task</h3>
+			<p>You are required to create a single webpage (or a set of two pages) that correctly implements the four different varieties of hyperlinks 
+			discussed in the lesson.</p>
+
+			<h3>Instructions</h3>
+			<ul>
+			<li>The Internal Connection: Create a link that points to another page within your website (e.g., from lessons.html back to index.html). 
+			Remember, without these, your site cannot truly be called "multi-page".</li>
+			<li>The External Network: Add a link that takes the user to a completely different website, such as a search engine or a reference site. 
+			This demonstrates how your site becomes part of the global "network" of the Web.</li>
+		    <li>The Anchor Jump: Create a section at the very bottom of your page with a unique id (e.g., [div id="footer-contact"]).
+				At the top of your page, create a link that, when clicked, allows the browser to "jump" directly to that bottom section without 
+				loading a new document.</li>
+			<li>The SEO Practice: Choose descriptive "anchor text" for your links. Instead of writing "Click here," write a phrase like "Learn more about CSS 
+			Selectors" to help search engines understand what the target page is about.</li>
+			</ul>
+
+			<h3>Questions</h3>
+				<ol>
+				<li>Does your internal link move between your local files?</li>
+				<li>Does your external link open a new website?</li>
+				<li>Does your anchor link scroll the page automatically to the correct section?</li>
+				<li>Are your links styled to be easily identifiable by the user (e.g., blue and underlined)?</li>
+			</ol>
+			
+            </div>
+        </details>
+    </div>
+	
+	</div>
+        </details>
+    </div>
+
+<div class="card">
+        <details>
+            <summary>Frames</summary>
+            <div class="lesson-content">
+			<img src="https://html.com/wp-content/uploads/mixed_frames.jpg">
+			<h3>Introduction to HTML Frames</h3>
+            <p>In web development, frames are used to partition a single browser window into multiple, independent sections. Each section, or "frame," 
+			functions as its own container capable of loading a unique HTML document. This allows developers to present various pieces of content—such as a 
+			fixed navigation menu alongside a scrollable article—simultaneously without the user needing to refresh the entire page.</p>
+
+			<h3>The Two Primary Methods</h3>
+				<ol>
+				<li>The [frameset] Element: Traditionally, the [frameset] tag was used instead of the [body] tag to define the structural layout of a page. 
+				It organizes the window into rows and columns. Inside a frameset, the [frame] tag identifies the specific HTML file to be displayed in each 
+				section.</li>
+				<li>The [iframe] (Inline Frame):Unlike the older frameset, the [iframe] is highly relevant in modern web design. It allows you to embed external
+				content (like a YouTube video, a Google Map, or another website) directly into an existing HTML document. It uses the src attribute to pull the 
+				content and width and height to set its size.</li>
+				</ol>
+
+			<h3>Key Attributes of Framesets</h3>
+			<p>To customize how a page is divided, developers use several specific attributes within the [frameset] tag: </p>
+				<ul>
+				<li>Cols & Rows: These define the vertical or horizontal divisions. Sizes can be set in Pixels (for a fixed, absolute size) or Percentages 
+				(for a responsive, relative size that changes with the browser window).</li>
+				<li>Border: This sets the thickness of the lines between frames (measured in pixels). Setting this to "0" hides the dividers entirely.</li>
+				<li>Frameborder: A simple "yes/no" (1 or 0) toggle that determines whether a visible border should surround the frames.</li>
+				<li>Framespacing: This adds extra "breathing room" or empty space between the frames to improve visual clarity.</li>
+				</ul>
+
+			<h3>Pros and Cons of Using Frames</h3>
+			<p>The Benefits:</p>
+				<ul>
+				<li>Design Consistency: You can keep a sidebar or header visible at all times while the main content changes.</li>
+				<li>External Integration: Iframes make it easy to pull in dynamic data (like social media feeds) from other sources.</li>
+				<li>Independent Loading: Specific parts of a page can update or scroll without affecting the rest of the layout.</li>
+				</ul>
+
+			<h3>The Challenges:</h3>
+				<ul>
+				<li>SEO & Accessibility: Search engines often struggle to index content hidden inside frames, and screen readers for visually impaired users 
+				may find frame-based layouts difficult to navigate.</li>
+				<li>Mobile Compatibility: Frames do not always resize well on small smartphone screens, which can lead to distorted or "cluttered" designs.</li>
+				<li>Security: Using iframes to pull content from untrusted domains can sometimes lead to cross-domain security risks.</li>
+				</ul>
+			
+			<div class="card">
+        <details>
+            <summary>🔗 Activity</summary>
+            <div class="lesson-content">
+			<h3>Learning Activity:</h3>
+			<h3>Objective:</h3> 
+			<p>Practice dividing a webpage into functional zones using rows and columns.</p>
+			<h3>The Task:</h3>
+			<p>Imagine you are building a dashboard. Use the concepts above to plan a layout that meets these requirements:</p>
+				<ol>
+				<li>Create a Frameset with two columns. The left column should be a fixed 200px (for a menu), and the right column should take up the remaining
+				percentage of the screen.</li>
+				<li>Inside the right column, nest a second frameset that divides the space into two equal rows (50%, 50%).</li>
+				<li>Bonus: On one of your pages, embed a small iframe that links to a reference site like W3Schools</li>.
+				</ol>
+			
+            </div>
+        </details>
+    </div>
+	
+	</div>
+        </details>
+    </div>
+	
+	<div class="card">
+        <details>
+            <summary>Webforms</summary>
+            <div class="lesson-content">
+			<img src="https://www.formbot.com/images/form-html.png">
+			<h3>Webforms</h3>
+                <p>HWeb forms are a vital part of web development, acting as the primary bridge for interaction between a user and a website. Whether it's a login screen, 
+				a search bar, or a contact page, forms allow users to input data that can be processed by a server or used to update the webpage immediately.</p>
+
+			<h3>The Anatomy of an HTML Form</h3>
+			<p>An HTML form is a container populated with form controls (also known as widgets). These widgets—like text fields, checkboxes, and buttons—are what users 
+			interact with to provide information.</p>
+				<ol>
+				<li>The [form] Container Every form is wrapped in the [form] element. It uses two critical attributes to define how data is handled:
+					<br><b>action:</b> The URL/destination where the data is sent.
+					<br><b>method:</b> The HTTP method used (usually GET for fetching data or POST for sending sensitive/large data).
+				<li>Core Form Elements 
+				<br><b>[label]:</b> Essential for accessibility and usability. Using the for attribute connects the label to the id of an input, allowing users 
+				to click the text to focus on the field.
+				<br><b>[input]:</b> The most common form element. Its behavior is defined by the type attribute:
+				<br>type="text": A standard single-line box.
+				<br>type="email": A "smart" field that validates the format of an email address.
+				<br><br><b>[textarea]</b>: Used for multi-line text, such as a "Message" or "Comment" section. Unlike the input tag, it requires a closing tag ([/textarea]).
+				<br><b>[button]:</b> Triggers an action. Setting type="submit" sends the collected data to the server.</li>	
+				</ol>
+			</p>
+			
+			<h3>Design and Best Practices</h3>
+			<ul>
+			<li>Keep it Simple: From a User Experience (UX) perspective, smaller forms are better. Only ask for the data you absolutely need to avoid frustrating your users.</li>
+			<li>Validation: Use specific input types (like email) to ensure the data entered follows the correct format before it is even sent to the server.</li>
+			<li>Naming Data: Always include the name attribute on your inputs. This acts as a "key" so the server knows which piece of data is the name, which is the email, 
+			and so on.</li>
+			</ul>
+			
+			<div class="card">
+        <details>
+            <summary>🔗 Activity</summary>
+            <div class="lesson-content">
+			<h3>Learning Activity:</h3>
+			<h3>Objective:</h3> 
+			<p>Create and style a functional contact form based on the concepts provided.</p>
+			<h3>The Task:</h3>
+				<ol>
+				<li>Build the Structure: Create an HTML file and set up a [form] with an action of "#" (to keep it on the same page) and a method of "post".
+				Add Inputs: Include three fields: A Name field using [input type="text"]. An Email field using [input type="email"]. A Message field using [textarea].</li>
+				<li>Label Everything: Use the [label] tag for each field and ensure the for attribute matches the input's id.</li>
+				<li>The Submit Action: Add a [button type="submit"] that says "Send Message".</li>
+				<li>Mastery Challenge (Styling): Add a [style] block to your [head]. Set the display of your labels to inline-block with a min-width so your input 
+				boxes align perfectly in a straight vertical line.</li>
+				</ol>
+			
+            </div>
+        </details>
+    </div>
+	
+	</div>
+        </details>
+    </div>
+	
+	<div class="card">
+        <details>
+            <summary>Introduction to CSS</summary>
+            <div class="lesson-content">
+			<h3>Cascading Style Sheet (CSS)</h3>
+                <p>If HTML is the "skeleton" of a website, CSS is the design, the layout, and the personality. It is the language used to describe the presentation 
+				of a webpage, including colors, fonts, spacing, and positioning. Before CSS existed, web design was limited and difficult to maintain; now, CSS allows you 
+				to transform a plain document into a professional, modern interface.</p>
+				<h3>How CSS Works: The Anatomy of a Rule</h3>
+				<p>CSS works by associating rules with HTML elements. A CSS rule consists of two main parts:</p>
+				<ul>
+				<li>The Selector: Points to the HTML element you want to style (e.g., h1, p, or .container).</li>
+				<li>The Declaration Block: Contains one or more declarations separated by semicolons. Each declaration includes a Property 
+				(what you want to change) and a Value (how you want to change it).
+				<br>Example:
+				<br><img src="https://www.w3schools.com/css/img_selector.gif"><br>
+				<h3>Three Ways to Apply CSS</h3>
+				<p>To make your HTML look good, you can apply CSS in three different ways:</p>
+				<ol>
+				<li>Inline CSS: Written directly inside an HTML element using the style attribute.
+				<br>Example: [p style="color: red;"]Important text[/p]</li>
+				<li>Internal CSS: Defined within a [style] tag inside the [head] section of your HTML document. 
+				This is good for single-page websites.</li>
+				<li>External CSS: The professional standard. You write your styles in a separate file (e.g., style.css) and link it to your HTML. This allows you to change 
+				the look of an entire website by editing just one file.</li>
+				</ol>
+				
+				<h3>Why Use CSS?</h3>
+				<ul>
+				<li>Consistency: You can ensure every page on your site uses the same colors and fonts.</li>
+				<li>Efficiency: You can change the heading color of 100 pages instantly by changing one line of code.</li>
+				<li>User Experience: CSS makes websites readable, accessible, and organized.</li>
+				<li>Responsiveness: CSS allows websites to shrink or grow to fit mobile phones, tablets, and desktop screens.</li>
+				
+			<div class="card">	
+        <details>
+            <summary>🔗 Activity</summary>
+            <div class="lesson-content">
+			<h3>Learning Activity:</h3>
+			<h3>Objective</h3> 
+			<p>Practice the three methods of applying CSS and understand how they interact.</p>
+
+			<h3>The Task</h3>
+			<p>You are required to create a single webpage (or a set of two pages) that correctly implements the four different varieties of hyperlinks 
+			discussed in the lesson.</p>
+				<ol>
+				<li>The Inline Test: Create a heading ([h1]) and use an inline style to change its color to "Green."</li>
+				<li>The Internal Challenge: In the [head] of your document, create a [style] block. Write a rule that makes all paragraphs ([p]) 
+				have a font-size of 18px.</li>
+				<li>The External Connection: Create a file named mastery.css. Link it to your HTML. In this file, change the background-color of the body 
+				to a very light gray (#f4f4f4).</li>
+				<li>The Priority Observation: Try to style the same heading in both your External CSS (set it to "Red") and your Inline CSS (set it to "Blue"). 
+				Which color wins? (Hint: The more specific "inline" style usually takes priority!)</li>
+				</ol>
+		 </div>
+        </details>
+    </div>
+	
+	</div>
+        </details>
+    </div>
+	
+	<div class="card">
+        <details>
+            <summary>CSS: Selectors, Div, Span, Class, ID, & Links </summary>
+            <div class="lesson-content">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNIkXOlcua4bazUX-C_omRlegFYMRCUv47w&s">
+			<h3>CSS Selectors</h3>
+			<p>CSS Selectors are the "addresses" used to target specific HTML elements. 
+			Mastering selectors allows you to apply different styles to different parts of your website with surgical precision.</p>
+			<h3>Key Concepts</h3>
+			<ul>
+			<li>[div] & <span>: The [div] is a block-level container used for large sections (like a header or a card), 
+			while [span] is an inline container used to style specific words or characters inside a sentence.</li>
+			<li>The ID Selector (#): Used to target one unique element on a page. Think of it like a person's Social 
+			Security Number—it shouldn't be shared.</li>
+			<li>The Class Selector (.): Used to target multiple elements. Think of it like a uniform—many different elements can 
+			"wear" the same class to look identical.</li>
+			<li>Link States (Pseudo-classes): You can change how a link looks based on user action:
+				<br>a:link (Standard)
+				<br>a:hover (Mouse over)
+				<br>a:active (While clicking)</li>
+			</ul>
+			
+			
+			<div class="card">
+        <details>
+            <summary>🔗 Activity</summary>
+            <div class="lesson-content">
+			<h3>The Task</h3>
+			<ol>
+			<li>In your HTML, create a [div] with the ID special-box. In your CSS, give it a unique background color.</li>
+			<li>Create three paragraphs and give them all the class highlight. In your CSS, make this class turn the text bold and blue.</li>
+			<li>Apply a hover effect to your navigation menu so that the links change color when you move your mouse over them.</li>
+			</ol>
+			
+			
+            </div>
+        </details>
+    </div>
+	
+	</div>
+        </details>
+    </div>
+	<div class="card">
+        <details>
+            <summary>Formatting Text with CSS</summary>
+            <div class="lesson-content">
+			<img src="https://cdn.educba.com/academy/wp-content/uploads/2019/08/CSS-Text-Formatting-Properties2.png">
+			<h3>Formatting CSS</h3>
+			<p>Text formatting is about more than just colors; it’s about Typography. This lesson teaches you how to ensure your content is 
+			readable, professional, and visually balanced.</p>
+			<h3>Key Concepts</h3>
+			<ul>
+			<li>font-family: Choosing between Serif (traditional) and Sans-Serif (modern/clean) fonts.</li>
+			<li>font-size: Setting the scale of your text (px, em, or rem).</li>
+			<li>font-weight: Adjusting thickness (bold vs. normal).</li>
+			<li>line-height: Adding vertical space between lines of text (essential for readability).</li>
+			<li>text-align: Controlling whether text is centered, left-aligned, or justified.</li>
+			</ul>
+			
+			
+
+			<div class="card">
+        <details>
+            <summary>🔗 Activity</summary>
+            <div class="lesson-content">
+			<h3>The Task</h3>
+			<ol>
+			<li>Go to your "About" page and set the font-family of the entire body to a Sans-Serif font like Arial.</li>
+			<li>Set your main [h1] title to text-align: center.</li>
+			<li>Increase the line-height of your paragraphs to 1.6. Observe how much easier it is to read the text when it isn't "squashed" together.</li>
+			</ol>
+            </div>
+        </details>
+    </div>
+	
+	</div>
+        </details>
+    </div>
+	<div class="card">
+        <details>
+            <summary>Formatting Layout with CSS</summary>
+            <div class="lesson-content">
+			<img src="https://web.dev/static/learn/css/layout/image/a-diagram-showing-the-di-4e46d3ae32e54.png">
+			<h3>Formatting Layout</h3>
+			<p>This is where you learn how to move elements around the screen. Layout is governed by the Box Model, 
+			which dictates how much space an element takes up.</p>
+			<h3>Key Concepts</h3>
+			<ul>
+			<li>The Box Model: Every element is a rectangular box. It consists of:
+			<br>Content: The text or image.
+			<br>Padding: Space inside the border.
+			<br>Border: The line around the padding.</li>
+			<br>Margin: Space outside the border (used to push other boxes away).
+			<li>Width & Height: Explicitly setting the dimensions of your boxes.</li>
+			<li>Centering: Using margin: auto on a container with a set width to keep it in the middle of the screen.</li>
+		
+		<br>
+			
+			<div class="card">
+        <details>
+            <summary>🔗 Activity</summary>
+            <div class="lesson-content">
+			<h3>The Task</h3>
+			<ol>
+			<li>Create a class called .container. Set its width to 80%.</li>
+			<li>Apply margin: auto to that class so your content stays centered on the screen.</li>
+			<li>Add 20px of padding to your lesson cards so the text doesn't touch the borders, and 15px of margin-bottom to separate the cards from each other.</li>
+			</ol>
+			
+			
+            </div>
+        </details>
+    </div>
+	
+	</div>
+        </details>
+    </div>
+    
+
+</div>
+
+<footer>
+    CodeBloom Academy | Email: lovesonglistt@gmail.com | © 2026 · All Rights Reserved | Denise Camille S. Lucas Grade |  9 STE - Assertiveness
+</footer>
+
+</body>
+</html>
